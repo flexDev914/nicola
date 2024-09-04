@@ -1,0 +1,137 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top of other content */
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 717px;
+  border-radius: 10px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background-color: var(--emailBgColor);
+}
+
+.modalTitle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 55px;
+  color: var(--primary-txtColor);
+  text-align: center;
+}
+
+.modalText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--primary-txtColor);
+  padding-left: 75px;
+}
+
+.modalBtnWrapper {
+  width: 460px;
+  padding-left: 75px;
+  margin-top: 50px;
+}
+
+.modalSmallTitle {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--primary-txtColor);
+}
+
+.modalSelectBtns {
+  border-radius: 30px;
+  background: var(--customerCardColor);
+  padding: 10px;
+  color: var(--headerHBtnColor);
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.modalSelectBtns:hover {
+  background-color: var(--headerTxtColor);
+  color: #8424de;
+  transition: 1s;
+}
+
+.modalTextWrapper {
+  padding-left: 75px;
+  margin-top: 50px;
+}
+
+.modalTextWrapper p {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--primary-txtColor);
+}
+
+.modalTextWrapper textarea {
+  width: 492px;
+  height: 136px;
+  border-radius: 5px;
+  background: var(--inputBgColor);
+  border: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  padding: 20px 0 0 20px;
+}
+
+.modalInputWrapper {
+  padding-left: 75px;
+  margin-top: 75px;
+}
+
+.modalInputWrapper p {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--primary-txtColor);
+}
+
+.modalInputConta {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.modalInputConta input {
+  width: 240px;
+  height: 45px;
+  border-radius: 5px;
+  background: var(--inputBgColor);
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+  padding: 0 0 0 17px;
+  border: none;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.checkTxt {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: #808080;
+}
+
+.checkTxt span {
+  color: var(--cardBgColor);
+}

@@ -1,0 +1,137 @@
+.footerContainer {
+  width: 100%;
+  max-width: 1440px;
+  background: var(--emailBgColor);
+  margin: auto;
+}
+
+.footerWrapper {
+  width: 100%;
+  max-width: 1160px;
+  height: 45vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footerFirst {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 43px;
+}
+
+.footerFirst > div {
+  color: var(--primary-txtColor);
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 22.4px;
+  font-size: 16px;
+}
+
+.footerInput {
+  width: 280px;
+  height: 45px;
+  background: #c4c4c4;
+  border: none;
+}
+
+.footerSecond {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerIcontxt {
+  display: flex;
+}
+
+.footerIcontxt > div {
+  font-size: 26px;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 39px;
+  letter-spacing: -0.03em;
+  margin-left: 18px;
+
+  color: var(--primary-txtColor);
+}
+
+.footerDarkBtn {
+  background: var(--primary-txtColor);
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 500;
+  color: var(--primary-bgColor);
+  padding: 16.5px 47px 16.5px 40px;
+  border: none;
+  transition: 1s;
+  border-radius: 550.16px;
+  display: flex;
+  align-items: center;
+}
+
+.footerDarkBtn:hover {
+  cursor: pointer;
+  transition: 1s;
+  background: #8424de;
+}
+
+.footerGrayBtns {
+  display: flex;
+}
+
+.footerBtnItem {
+  background: var(--bottomBtnColor);
+  color: var(--bottomTxtColor);
+  /* padding: 16px 34px 17px 34px; */
+  border: none;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-right: 5px;
+  letter-spacing: -0.03em;
+}
+
+.footerBtnItem:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  background: var(--primary-txtColor);
+  color: var(--headerTxtColor);
+}
+
+.footerThird {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerBtns {
+  display: flex;
+}
+
+.footerSocials {
+  display: flex;
+  align-items: center;
+}
+
+.footerSocials > div {
+  margin-left: 20px;
+}
+
+.footerDown {
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footerDown > div {
+  color: var(--headerTxtColor);
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 400;
+}

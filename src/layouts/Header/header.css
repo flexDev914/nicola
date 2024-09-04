@@ -1,0 +1,46 @@
+.headerWrapper {
+  width: 100%;
+  background: var(--primary-bgColor);
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.headerTitle {
+  display: flex;
+  line-height: 24.2px;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: "Inter";
+  padding-left: 30px;
+  padding-top: 3px;
+  letter-spacing: -0.03em;
+  color: var(--primary-txtColor);
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggleTheme {
+  display: flex;
+  align-items: center;
+  margin-left: 189px;
+}
+
+.headerLeftWrap {
+  /* width: 40%; */
+}
+
+.headerRightWrap {
+  /* width: 60%; */
+  margin-left: 409px;
+  display: flex;
+  justify-content: space-between;
+}

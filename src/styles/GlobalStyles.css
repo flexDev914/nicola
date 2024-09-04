@@ -1,0 +1,45 @@
+:root {
+  --primary-bgColor: #f7f7f7;
+  --primary-txtColor: #212025;
+  --headerBtnColor: #eaeaea;
+  --topButtonColor: #eaeaea;
+  --bottomTxtColor: #212025;
+  --bottomBtnColor: #E0E0E0;
+  --topBtnLetterColor: #808080;
+  --headerTxtColor: #808080;
+  --headerHBtnColor: #212025;
+  --cardColor: #212025;
+  --grayText: #808080;
+  --smallAvatarText: #808080;
+  --pinkColor: #8424de;
+  --emailBgColor: #ececec;
+  --inputBgColor: #dbdbdb;
+  --secondary-bgColor: #e2e2e2;
+  --footer-grayBtn: #e0e0e0;
+  --cardBgColor: #212025;
+  --customerCardColor: white;
+  --changeImageColor: invert(0)
+}
+
+[data-theme="dark"] {
+  --primary-bgColor: #212025;
+  --primary-txtColor: white;
+  --headerBtnColor: #f7f7f7;
+  --topButtonColor: #545454;
+  --bottomTxtColor: #f7f7f7;
+  --bottomBtnColor: #545454;
+  --topBtnLetterColor: #f7f7f7;
+  --headerTxtColor: #808080;
+  --headerHBtnColor: rgb(163, 163, 163);
+  --cardColor: white;
+  --grayText: white;
+  --smallAvatarText: white;
+  --pinkColor: #8424de;
+  --emailBgColor: #272727;
+  --inputBgColor: #545454;
+  --secondary-bgColor: #17161a;
+  --footer-grayBtn: #272727;
+  --cardBgColor: #8424de;
+  --customerCardColor: white;
+  --changeImageColor: invert(1)
+}

@@ -1,0 +1,46 @@
+.mySwiper {
+  padding: 20px !important;
+  margin-top: 75px;
+  margin-bottom: 135px;
+  margin-left: 50px;
+  background-color: var(--primary-bgColor);
+}
+
+.swiper-slide {
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.customerContainer {
+  overflow: hidden;
+}
+
+.rewCusTitle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  margin-top: 185px;
+}
+.rewCusTitleLeft {
+  margin-left: 141px;
+  margin-top: 10px;
+}
+.rewCusTitleRight {
+  width: 567px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-left: 348px;
+  letter-spacing: -0.03em;
+}
+
+.rewCusTitleRight span {
+  color: var(--pinkColor);
+}

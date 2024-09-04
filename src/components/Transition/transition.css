@@ -1,0 +1,113 @@
+.transitionTop {
+  width: 266px;
+  height: 266px;
+  background: #ececec;
+  position: absolute;
+  top: 80px;
+  right: -100px;
+  border-radius: 10px;
+  rotate: -30deg;
+  transition: 1s;
+}
+
+.transitionTop1 {
+  width: 266px;
+  height: 266px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: absolute;
+  top: 280px;
+  rotate: -50deg;
+  right: -120px;
+  transition: 1s;
+}
+
+.transitionTop1:hover {
+  rotate: -27.21deg;
+  right: 80px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.transitionTop:hover {
+  cursor: pointer;
+  rotate: -9.15deg;
+  right: 100px;
+  transition: 1s;
+}
+
+.colTxt {
+  padding-top: 43.68px;
+  padding-left: 25px;
+  color: #8424de;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+}
+
+.topTxt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #808080;
+  line-height: 19.6px;
+  padding-left: 25px;
+  letter-spacing: -0.03em;
+}
+
+.topBtnWrapper {
+  display: flex;
+}
+
+.topButton {
+  width: 168px;
+  height: 47.8px;
+  border-radius: 459px;
+  color:var(--primary-bgColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "Inter";
+  margin-top: 30px;
+  background-color: var(--primary-txtColor);
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.topCircle {
+  width: 47.8px;
+  height: 47.8px;
+  border-radius: 50%;
+  background-color: var(--primary-txtColor);
+  margin-top: 30px;
+  margin-left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topTelegram{
+  color: var(--primary-bgColor);
+}
+
+.topBtnWrapper:hover{
+  .topButton{
+    background-color: var(--pinkColor);
+    color: white;
+  }
+
+  .topTelegram{
+    color: white;
+  }
+
+  .topCircle{
+    background-color: var(--pinkColor);
+  }
+}
+
+@media (max-width: 900px) {
+  .transitionContainer {
+    display: none;
+  }
+}

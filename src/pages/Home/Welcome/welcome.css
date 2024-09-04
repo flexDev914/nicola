@@ -1,0 +1,108 @@
+.welcomeContainer {
+  width: 100%;
+  /* padding-top: 112px; */
+  padding-bottom: 190px;
+  overflow: hidden;
+  position: relative;
+}
+
+.welcomeWrapper {
+  width: 100%;
+  display: flex;
+  padding-top: 95px;
+}
+
+.welcomeLeft {
+  width: 250.48px;
+  padding-left: 136px;
+}
+
+.welcomeRight {
+  width: 566.66px;
+  margin-left: 209px;
+}
+
+.welcomeImgWrap {
+  margin-top: 12px;
+  position: relative;
+}
+
+.logoImg {
+  width: 250.48px;
+  height: 250.48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circleImg {
+  width: 54.07px;
+  height: 54.07px;
+  position: absolute;
+  right: 33px;
+  bottom: -10px;
+  cursor: pointer;
+}
+
+.circleImg:hover{
+  cursor: pointer;
+}
+
+.welcomeLinkWrap {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.welcomeTitle {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 66px;
+  color: var(--pinkColor);
+  line-height: 79.2px;
+  letter-spacing: -0.03em;
+}
+
+.welcomeTitle span {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 66px;
+  color: var(--primary-txtColor);
+  line-height: 79.2px;
+  letter-spacing: -0.03em;
+}
+
+.welcomeText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-top: 22px;
+}
+
+.welcomeMotalBtn {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  background: var(--pinkColor);
+  color: #f7f7f7;
+  padding: 16px 30px 16px 30px;
+  border: none;
+  border-radius: 550.16px;
+  cursor: pointer;
+  margin-top: 70px;
+  transition: 0.5s;
+}
+
+.welcomeMotalBtn:hover {
+  background: black;
+  transition: 0.5s;
+}
+@media (max-width: 1330px) {
+  .circleImg {
+    right: 150px;
+  }
+}

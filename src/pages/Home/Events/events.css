@@ -1,0 +1,74 @@
+.eventsTitle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  padding-top: 200px;
+}
+
+.eventsTitleLeft {
+  margin-left: 136px;
+  margin-top: 10px;
+}
+
+.eventsTitleRight {
+  width: 720px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-left: 348px;
+  margin-bottom: 60px;
+}
+
+.eventsTitleRight span {
+  color: var(--pinkColor);
+}
+.eventsWrapper {
+  width: 100%;
+  max-width: 1160px;
+  border-radius: 10px;
+  background: var(--emailBgColor);
+  margin: auto;
+  /* margin-top: 60px; */
+  height: 134px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.eventsTitleTxt {
+  width: 30%;
+  padding-left: 35px;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25.2px;
+  letter-spacing: -0.02em;
+  color: var(--primary-txtColor);
+}
+
+.eventsContentTxt {
+  width: 25%;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-txtColor);
+  line-height: 22.4px;
+  margin-left: 75px;
+}
+
+.eventsAddressWrap {
+  width: 25%;
+  margin-left: 110px;
+}
+
+.eventsFooterWrap {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 200px;
+}

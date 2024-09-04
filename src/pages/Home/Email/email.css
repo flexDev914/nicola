@@ -1,0 +1,101 @@
+.Emailsection {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  margin-top: 100px;
+  background: var(--emailBgColor);
+  position: relative;
+}
+
+.emailTitle {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--primary-txtColor);
+  padding-top: 25px;
+  padding-left: 34px;
+  letter-spacing: -0.03em;
+}
+
+.emailTxt {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--primary-txtColor);
+  padding-left: 34px;
+  margin-top: 15px;
+  letter-spacing: -0.03em;
+}
+
+.emailFooter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputWrapper {
+  padding-left: 34px;
+  margin-top: 100px;
+  margin-bottom: 35px;
+}
+
+.inputWrapper input {
+  width: 250px;
+  height: 45px;
+  border-radius: 5px;
+  background: var(--inputBgColor);
+  border: none;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grayText);
+  padding-left: 19px;
+}
+
+.emailSend {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 14.71px;
+  background: var(--primary-txtColor);
+  color: var(--primary-bgColor);
+  border: none;
+  border-radius: 459.57px;
+  padding: 16px 35px 16px 35px;
+  cursor: pointer;
+  margin-left: 25px;
+  transition: 1s;
+}
+
+.emailSend:hover {
+  background: #8424de;
+  transition: 1s;
+}
+
+.emailIconWrapper {
+  display: flex;
+  margin-top: 95px;
+  gap: 3px;
+  padding-right: 15px;
+}
+
+.emailCircle {
+  width: 48px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e0e0;
+  border-radius: 50%;
+  margin-right: 12px;
+  position: relative;
+}
+
+.emailCircle img:hover{
+  cursor: pointer;
+  filter: invert(24%) sepia(97%) saturate(7500%) hue-rotate(280deg) brightness(100%) contrast(100%);
+}
+
+.groupImg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}

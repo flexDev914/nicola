@@ -1,0 +1,157 @@
+.customerBoxWrap {
+  width: 30%;
+  padding: 15px;
+  background-color: var(--primary-bgColor);
+  border-radius: 30px;
+  text-align: center;
+}
+
+.customerTopBtn {
+  width: 103px;
+  height: 25px;
+  background: var(--headerBtnColor);
+  border-radius: 20px;
+  border: none;
+  margin: 2.5px;
+  transition: 0.5s;
+  margin-left: 5px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.customerTopBtn:hover {
+  cursor: pointer;
+  transition: 0.8s;
+  background: var(--headerHBtnColor);
+}
+
+.cardHeader {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 20px 20px 0 0 !important;
+  height: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.phoneText1 {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14.52px;
+  letter-spacing: -0.02em;
+  margin-top: 5px;
+}
+
+.phoneText2 {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.52px;
+  letter-spacing: -0.02em;
+  margin-top: 5px;
+  margin-top: 15px;
+}
+
+.phoneBottomTxt {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: -0.03em;
+  color: #3c7da7;
+}
+
+.smAvatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.cardBody {
+  background-color: #d7adff !important;
+  padding: 15px;
+  border-radius: 0 0 20px 20px !important;
+}
+
+.cardContent {
+  border-radius: 10px !important;
+  padding: 20px !important;
+  text-align: left !important;
+}
+
+.cardIcon {
+  background-color: #eaf5f9;
+  color: #3c7da7;
+  border-radius: 15px;
+}
+
+.customerBottomBtn {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #f7f7f7;
+  padding: 17px 27px 17px 27px;
+  border-radius: 500px;
+  background: #8424de;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.customerBottomBtn:hover {
+  background: black;
+  color: white;
+  transition: 1s;
+}
+
+.cardStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 10px;
+  height: 180px;
+  padding: 15px;
+  background-color: var(--primary-bgColor);
+  max-width: 689px !important;
+}
+
+.img-card {
+  flex-direction: column !important;
+  border-radius: 10px;
+}
+
+.card-left {
+  width: 40%;
+}
+
+.cardTxt {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--primary-txtColor);
+  padding: 0 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  line-height: 19.36px;
+  letter-spacing: -0.02em;
+}
+
+.defaultWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-left: 10px;
+  flex-wrap: wrap;
+}
+
+.itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}

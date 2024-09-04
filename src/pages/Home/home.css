@@ -1,0 +1,13 @@
+.homeContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  background: var(--primary-bgColor);
+}
+
+.reviewHistoryContainer {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  background: var(--secondary-bgColor);
+}

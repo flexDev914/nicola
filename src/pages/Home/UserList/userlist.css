@@ -1,0 +1,230 @@
+.userListTitle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.userListTitleLeft {
+  margin-left: 136px;
+  margin-top: 10px;
+}
+
+.userListTitleRight {
+  width: 720px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-left: 348px;
+}
+
+.userListTitleRight span {
+  color: var(--pinkColor);
+}
+
+.customerBottom {
+  width: 100% !important;
+  max-width: 1160px !important;
+  margin: auto;
+  display: flex;
+  margin-top: 65px;
+}
+
+.userListLeftWrap {
+}
+
+.userListRightWrap {
+  width: 720px;
+  margin-left: 70px;
+}
+
+.customerImg {
+  width: 389px;
+  height: 531px;
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.circlePhotoContainer {
+  display: flex;
+}
+
+.smallAvatarText {
+  text-align: center;
+  font-family: "Inter";
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  color: var(--smallAvatarText);
+  margin-top: 8px !important;
+}
+
+.smallAvatar {
+  border-radius: 50%;
+  outline: 2px solid #8424de;
+  padding: 3px;
+  cursor: pointer;
+  margin-top: -3px;
+}
+
+.smallAvatar:hover {
+  opacity: 0.7;
+}
+
+.middleText {
+  font-family: "Inter" !important;
+  font-weight: 600 !important;
+  font-size: 25px !important;
+  color: var(--pinkColor);
+  margin-top: 63px !important;
+  letter-spacing: -0.03em !important;
+}
+
+.middleText span {
+  color: var(--primary-txtColor);
+}
+
+.skillCardWrap {
+  max-width: 664px;
+  width: 100%;
+  display: flex;
+}
+
+.piceNumber {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Inter";
+  font-weight: 700;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-top: 25px;
+}
+
+.piceText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  line-height: 16.8px;
+  margin-top: 10px;
+}
+
+.skillBtnWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 39px;
+  width: 100%;
+  max-width: 505px;
+}
+.leftArrowBtn {
+  position: absolute;
+  top: 250px;
+  left: -70px;
+  color: #8424de;
+  width: 40px;
+  height: 40px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatarModal {
+  width: 374px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rightArrowBtn {
+  position: absolute;
+  top: 250px;
+  right: -70px;
+  color: #8424de;
+  width: 40px;
+  height: 40px;
+  background: #f7f7f7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* ///////////// */
+
+
+.carousel-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-slide.active-slide {
+  display: block;
+  opacity: 1;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.app-heading {
+  margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+}
+
+.carousel-wrapper {
+  /* border: 2px solid #ddd; */
+  border-radius: 10px;
+  overflow: hidden;
+}

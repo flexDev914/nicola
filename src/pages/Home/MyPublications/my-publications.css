@@ -1,0 +1,120 @@
+.publicationTitle {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.pubTitleLeft {
+  margin-left: 141px;
+  margin-top: 10px;
+}
+
+.pubTitleRight {
+  width: 675px;
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--primary-txtColor);
+  letter-spacing: -0.03em;
+  margin-left: 311px;
+}
+
+.pubTitleRight span {
+  color: var(--pinkColor);
+}
+
+.myPublicationCard {
+  width: 100%;
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding-bottom: 250px;
+}
+
+.addBtn {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pubCardSquare {
+  height: 310px;
+  max-width: 275px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pubCard {
+  max-width: 275px;
+  height: 310px;
+  width: 100%;
+  background-color: var(--cardColor);
+  transition: 1s;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-right: 12px; */
+}
+
+.pubCard1 {
+  max-width: 275px;
+  height: 310px;
+  width: 100%;
+  background-color: #8424de;
+  rotate: 5.13deg;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* margin-left: 13px; */
+}
+
+.mdText {
+  font-family: "Inter";
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: var(--pinkColor);
+  padding-top: 9px;
+  padding-left: 28px;
+  line-height: 21.6px;
+  letter-spacing: -0.03em;
+  width: 226px;
+}
+
+.pubImg {
+  position: absolute;
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  transform: translateX(175px);
+  margin-top: 55px;
+  filter: var(--changeImageColor);
+}
+
+.mmdText {
+  font-family: "Inter";
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--primary-bgColor);
+  padding-left: 29px;
+}
+
+.xmText {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--grayText);
+  padding-left: 29px;
+}
+
+.addBtn:hover {
+  display: flex;
+}
