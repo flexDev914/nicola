@@ -27,6 +27,23 @@ import rectImg from "../assets/icon/rect.png";
 import swiper1 from "../assets/swiper1.png";
 import swiper2 from "../assets/swiper2.png";
 
+import slide1 from '../assets/slide/slide1.png'
+import slide2 from '../assets/slide/slide2.png'
+import slide3 from '../assets/slide/slide3.png'
+import slide4 from '../assets/slide/slide4.png'
+import slide5 from '../assets/slide/slide5.png'
+import slide6 from '../assets/slide/slide6.png'
+import slide7 from '../assets/slide/slide7.png'
+import slide8 from '../assets/slide/slide8.png'
+import slide9 from '../assets/slide/slide9.png'
+import slide10 from '../assets/slide/slide10.png'
+import slide11 from '../assets/slide/slide11.png'
+import slide12 from '../assets/slide/slide12.png'
+import slide13 from '../assets/slide/slide13.png'
+import slide14 from '../assets/slide/slide14.png'
+import slide15 from '../assets/slide/slide15.png'
+import slide16 from '../assets/slide/slide16.png'
+
 const publicationCards = [
   {
     purpleText: "Lorem ipsum dolor",
@@ -241,9 +258,69 @@ const myCustomers = [
   },
 ];
 
-const circleIcon = [telegram, vcru, habr, facebook, linkedin, x, youtube_dark,];
+const circleIcon = [
+  {
+    image: telegram,
+    url: 'https://web.telegram.org'
+  },
+  {
+    image: vcru,
+    url: 'https://vc.ru/'
+  },
+  {
+    image: habr,
+    url: 'https://habr.com/ru/articles/'
+  },
+  {
+    image: facebook,
+    url: 'https://www.facebook.com/'
+  },
+  {
+    image: linkedin,
+    url: 'https://ru.linkedin.com/'
+  },
+  {
+    image: x,
+    url: 'https://twitter.com'
+  },
+  {
+    image: youtube_dark,
+    url: 'https://www.youtube.com/'
+  }
+];
 
 const circle1Icon = [telegram1, vcru1, habr1, facebook1, linkedin1, x1, youtube_dark1]
+
+const smallAvatar = [
+  {
+    url: "./assets/smallAvatar1.png",
+    title: "Lorem",
+    images:[
+      slide1,slide2,slide3,slide4
+    ]
+  },
+  {
+    url: "./assets/smallAvatar2.png",
+    title: "Ipsum",
+   images:[
+      slide5,slide6,slide7,slide8
+    ]
+  },
+  {
+    url: "./assets/smallAvatar3.png",
+    title: "Sit amet",
+   images:[
+      slide9,slide10,slide11,slide12
+    ]
+  },
+  {
+    url: "./assets/smallAvatar4.png",
+    title: "Consectetuer",
+    images:[
+      slide13,slide14,slide15,slide16
+    ]
+  },
+];
 
 export {
   publicationCards,
@@ -252,5 +329,6 @@ export {
   circleIcon,
   historyBox,
   myCustomers,
-  circle1Icon
+  circle1Icon,
+  smallAvatar,
 };

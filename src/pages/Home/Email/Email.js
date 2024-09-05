@@ -35,7 +35,11 @@ const Email = () => {
       <div className="emailTxt">Physiological respiration involves</div>
       <div className="emailFooter">
         <div className="inputWrapper">
-          <input type="email" placeholder="Ваш Email" onChange={handleChange} />
+          <label className="inp">
+            <input type="email" onChange={handleChange} id="inp" placeholder="&nbsp;" />
+            <span className="label">Ваш Email</span>
+            <span className="focus-bg"></span>
+          </label>
           <button onClick={handleClick} className="emailSend">
             Подписаться
           </button>
@@ -43,13 +47,15 @@ const Email = () => {
         <div className="emailIconWrapper">
           {circleIcon.map((item, index) => (
             <Box key={index} className="emailCircle">
-              <img
-                src={item}
-                style={{
-                  paddingTop: `${index === 2 && "7px"}`,
-                  paddingLeft: `${index === 2 && "5px"}`,
-                }}
-              />
+              <a href={item.url} target="_blank">
+                <img
+                  src={item.image}
+                  style={{
+                    paddingTop: `${index === 2 && "7px"}`,
+                    paddingLeft: `${index === 2 && "5px"}`,
+                  }}
+                />
+              </a>
             </Box>
           ))}
         </div>

@@ -24,7 +24,7 @@ const EventsCell = (props) => {
       minute: "numeric",
     });
   return (
-    <Box className="eventsWrapper">
+    <Box className="eventsWrapper" id="events">
       <div className="eventsTitleTxt">{props.item.title}</div>
       <div className="eventsContentTxt">{props.item.description}</div>
       <div className="eventsAddressWrap">

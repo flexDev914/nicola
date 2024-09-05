@@ -99,3 +99,81 @@
   right: 0px;
   top: 0px;
 }
+
+
+
+/* input css */
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 45px;
+  max-width: 267px;
+  border-radius: 5px;
+  background-color: var(--inputBgColor);
+  overflow: hidden;
+}
+
+.inp .label {
+  position: absolute;
+  top: 2px;
+  left: 12px;
+  color: var(--grayText) !important;;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+
+.inp .focus-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 267px;;
+  height: 45px;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.inp input {
+  -webkit-appearance: none;
+  appearance: none;
+  width:267px;
+  border: 0;
+  font-family: inherit;
+  padding-left: 13px;
+  height: 45px;
+  font-size: 16px;
+  font-weight: 400;
+  background: var(--inputBgColor);
+  transition: all 0.15s ease;
+  color: var(--grayText) !important;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+}
+
+.inp input:not(:placeholder-shown) + .label {
+  transform: translate3d(0, -12px, 0) scale(0.75);
+}
+
+.inp input:focus {
+  outline: none;
+}
+
+.inp input:focus + .label {
+  transform: translate3d(0, -14px, 0) scale(0.75);
+}
+
+.inp input:focus + .label + .focus-bg {
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}

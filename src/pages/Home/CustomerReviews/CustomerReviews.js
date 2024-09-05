@@ -26,7 +26,6 @@ const CustomerReviews = () => {
     <Box id="c_reviews" className="customerContainer">
       <CustomerReviewsTitle />
       <Swiper
-        id="c_reviews"
         className="mySwiper"
         centeredSlides={true}
         grabCursor={true}

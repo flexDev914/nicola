@@ -124,7 +124,7 @@
 }
 .leftArrowBtn {
   position: absolute;
-  top: 250px;
+  top: 300px;
   left: -70px;
   color: #8424de;
   width: 40px;
@@ -134,17 +134,9 @@
   cursor: pointer;
 }
 
-.avatarModal {
-  width: 374px;
-  height: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .rightArrowBtn {
   position: absolute;
-  top: 250px;
+  top: 300px;
   right: -70px;
   color: #8424de;
   width: 40px;
@@ -154,77 +146,75 @@
   cursor: pointer;
 }
 
+.userModalContainer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  left: 13px;
+}
 
+.userModalContainer:hover {
+  cursor: pointer;
+}
 
+.userModalImg {
+  width: 29.79px;
+  height: 29.79px;
+  border-radius: 50%;
+}
 
-
-
-
-
+.userModalTitle {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: -0.03em;
+  color: #f7f7f7;
+  margin-left: 9px;
+}
 
 /* ///////////// */
 
+.carousel {
+  width: 100%;
+  max-width: 374px;
+  overflow: hidden;
+  position: relative;
+}
 
 .carousel-container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  transition: transform 0.5s ease;
 }
 
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-
-.carousel-slide {
-  display: none;
-  transition: opacity 0.5s ease;
-}
-
-.carousel-slide.active-slide {
-  display: block;
-  opacity: 1;
-}
-
-.carousel img {
-  width: 100%;
-  height: auto;
+.carousel-container img {
+  width: 374px;
+  height: 665px;
   object-fit: cover;
 }
 
-.carousel-button {
+.carousel-indicators {
   position: absolute;
-  top: 30%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 18px;
-  z-index: 1;
+  z-index: 1000;
+  top: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
 }
 
-.carousel-button.prev {
-  left: 10px;
+.indicator {
+  height: 1px;
+  background-color: #f7f7f7;
+  transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
-.carousel-button.next {
-  right: 10px;
+.indicator.viewed {
+  background-color: var(--pinkColor);
+  transform: scale(1);
 }
 
-.app-container {
-  text-align: center;
-}
-
-.app-heading {
-  margin-bottom: 20px;
-  font-size: 32px;
-  color: #333;
-}
-
-.carousel-wrapper {
-  /* border: 2px solid #ddd; */
-  border-radius: 10px;
-  overflow: hidden;
+.indicator.current {
+  background-color: var(--pinkColor);
+  /* transform: scale(1.5); */
 }

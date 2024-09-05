@@ -70,7 +70,11 @@ const Modal = ({ isOpen, onClose }) => {
         </div>
         <div className="modalTextWrapper">
           <p>Опишите задачу</p>
-          <textarea placeholder="Текстовое описание"></textarea>
+          <label className="inpm">
+            <textarea id="inpm" placeholder="&nbsp;" />
+            <span className="labelm">Текстовое описание</span>
+            <span className="focus-bgm"></span>
+          </label>
           <UploadBtn />
         </div>
         <div className="modalInputWrapper">

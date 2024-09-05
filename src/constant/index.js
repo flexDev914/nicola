@@ -6,20 +6,21 @@ import x from "../assets/icon/x.png";
 import youtube from "../assets/icon/youtube.png";
 import telegram from "../assets/icon/telegram_dark.png";
 import vcruPuple from "../assets/icon/vcru_pink.png";
-import youtube_dark from '../assets/icon/youtube_dark.png'
+import youtube_dark from "../assets/icon/youtube_dark.png";
 import logoImg from "../assets/Logo.png";
 import gameImg from "../assets/game.png";
 
+import telegram1 from "../assets/icon/bxl_telegram.png";
+import vcru1 from "../assets/icon/vcru_pink.png";
+import habr1 from "../assets/icon/Vector (4).png";
+import facebook1 from "../assets/icon/Vector (1).png";
+import linkedin1 from "../assets/icon/Vector.png";
+import x1 from "../assets/icon/Vector (2).png";
+import youtube_dark1 from "../assets/icon/Vector (3).png";
 
-import telegram1 from '../assets/icon/bxl_telegram.png'
-import vcru1 from "../assets/icon/vcru_pink.png"
-import habr1 from '../assets/icon/Vector (4).png'
-import facebook1 from '../assets/icon/Vector (1).png'
-import linkedin1 from '../assets/icon/Vector.png'
-import x1 from "../assets/icon/Vector (2).png"
-import youtube_dark1 from '../assets/icon/Vector (3).png'
-
-
+import pubVcru from "../assets/icon/pubVcru.png";
+import pubHabr from "../assets/icon/pubHabr.png";
+import pubYoutube from "../assets/icon/pubYoutube.png";
 
 export {
   habr,
@@ -33,6 +34,14 @@ export {
   logoImg,
   vcruPuple,
   youtube_dark,
-  telegram1, vcru1, habr1, facebook1, linkedin1, x1, youtube_dark1
+  telegram1,
+  vcru1,
+  habr1,
+  facebook1,
+  linkedin1,
+  x1,
+  youtube_dark1,
+  pubVcru,
+  pubHabr,
+  pubYoutube
 };
-

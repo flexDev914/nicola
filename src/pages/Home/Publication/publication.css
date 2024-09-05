@@ -56,10 +56,10 @@
   color: var(--headerTxtColor);
 }
 
-.carPlatform {
+/* .carPlatform {
   width: 30.18px;
   height: 31.9px;
-}
+} */
 
 .carTitle {
   font-family: "Inter";
@@ -101,6 +101,10 @@
   margin-bottom: 30px;
 }
 
+.carfooter a {
+  text-decoration: none;
+}
+
 .carLinkBtn {
   display: flex;
   align-items: center;
@@ -116,7 +120,7 @@
   transition: 0.5s;
 }
 
-.carLinkBtn:hover{
+.carLinkBtn:hover {
   background-color: #212025;
   transition: 0.5s;
 }

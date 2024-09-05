@@ -59,12 +59,12 @@ const Footer = () => {
           </Box>
           <Box className="footerSocials">
             {[
-              <img src={icon1} />,
-              <img src={icon2} />,
-              <img src={icon3} />,
-              <img src={icon4} />,
-              <img src={icon5} />,
-              <img src={icon6} />,
+              <a href="https://habr.com/ru/articles/" target="_blank"><img src={icon1} /></a>,
+              <a href="https://vc.ru/"  target="_blank"><img src={icon2} /></a>,
+              <a href="https://ru.linkedin.com/" target="_blank"><img src={icon3} /></a>,
+              <a href="https://www.facebook.com/" target="_blank"><img src={icon4} /></a>,
+              <a href="https://twitter.com" target="_blank"><img src={icon5} /></a>,
+              <a href="https://www.youtube.com/" target="_blank"><img src={icon6} /></a>
             ].map((item, index) => (
               <Box key={index}>{item}</Box>
             ))}

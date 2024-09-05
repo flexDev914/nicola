@@ -74,27 +74,22 @@ const Header = (props) => {
       </div>
       <div className="headerRightWrap">
         <div className="buttonGroup">
-          {/* {headerBtnInfo.map((item, index) => (
-            <Link key={index} to={item.id} spy={true} smooth={true}>
-              <HeaderBtn title={item.title} class={item.class} />
-            </Link>
-          ))} */}
           <Link to="welcome" spy={true} smooth={true}>
             <HeaderBtn title="Lorem" padding="12.5px 24.5px 13.5px 24.5px" />
           </Link>
-          <Link to="welcome" spy={true} smooth={true}>
+          <Link to="mypub" spy={true} smooth={true}>
             <HeaderBtn title="Ipsum" padding="12.5px 37.5px 13.5px 36.5px" />
           </Link>
-          <Link to="welcome" spy={true} smooth={true}>
+          <Link to="c_reviews" spy={true} smooth={true}>
             <HeaderBtn
               title="Dolor sit"
               padding="12.5px 34.5px 13.5px 34.5px"
             />
           </Link>
-          <Link to="welcome" spy={true} smooth={true}>
+          <Link to="events" spy={true} smooth={true}>
             <HeaderBtn title="Amet" padding="12.5px 23.5px 13.5px 24.5px" />
           </Link>
-          <Link to="welcome" spy={true} smooth={true}>
+          <Link to="#" spy={true} smooth={true}>
             <HeaderBtn title="Commodo" padding="12.5px 14.5px 13.5px 14.5px" />
           </Link>
         </div>

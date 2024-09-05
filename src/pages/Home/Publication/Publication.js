@@ -5,7 +5,7 @@ import { GoArrowUpRight } from "react-icons/go";
 import BlackBtn from "../../../components/Button/BlackBtn";
 import { getPublist } from "../../../api/fetchAPI";
 import END_POINT from "../../../config/config";
-import { habr, vcru, youtube } from "../../../constant";
+import { pubHabr, pubVcru, pubYoutube } from "../../../constant";
 import eyeImg from "../../../assets/icon/eye.png";
 import heartImg from "../../../assets/icon/heart.png";
 import circleImg from "../../../assets/icon/circle.png";
@@ -18,28 +18,29 @@ const PubCell = (props) => {
       ? `${Math.round(props.item.metrics.views / 1000)}k`
       : props.item.metrics.views;
 
-    const date = new Date(props.item.date)
-    const day = date &&
-      new Date(props.item.date)
-        .toLocaleString("ru-RU", {
-          day: "numeric",
-          month: "long",
-          year: "numeric"
-        })
-        .replace("г.", "")
+  const date = new Date(props.item.date);
+  const day =
+    date &&
+    new Date(props.item.date)
+      .toLocaleString("ru-RU", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+      })
+      .replace("г.", "");
 
   return (
     <div className="carComponent">
       <div className="carheader">
         <p className="carDate">{day}</p>
         {props.item.platform === "VC" && (
-          <img src={vcru} alt="vcru" className="carPlatform" />
+          <img src={pubVcru} alt="vcru" className="carPlatform" />
         )}
         {props.item.platform === "YouTube" && (
-          <img src={youtube} alt="Youtube" className="carPlatform" />
+          <img src={pubYoutube} alt="Youtube" className="carPlatform" />
         )}
         {props.item.platform === "Habr" && (
-          <img src={habr} alt="Habr" className="carPlatform" />
+          <img src={pubHabr} alt="Habr" className="carPlatform" />
         )}
       </div>
       <div className="carTitle">{props.item.title}</div>
@@ -51,10 +52,30 @@ const PubCell = (props) => {
         className="carImg"
       ></div>
       <div className="carfooter">
-        <button className="carLinkBtn">
-          {props.item.linktopub} &nbsp;
-          <GoArrowUpRight style={{ fontSize: "20px" }} />
-        </button>
+        {props.item.platform === "VC" && (
+          <a href="https://vc.ru/" target="_blank">
+            <button className="carLinkBtn">
+              {props.item.linktopub} &nbsp;
+              <GoArrowUpRight style={{ fontSize: "20px" }} />
+            </button>
+          </a>
+        )}
+        {props.item.platform === "YouTube" && (
+          <a href="https://www.youtube.com/" target="_blank">
+            <button className="carLinkBtn">
+              {props.item.linktopub} &nbsp;
+              <GoArrowUpRight style={{ fontSize: "20px" }} />
+            </button>
+          </a>
+        )}
+        {props.item.platform === "Habr" && (
+          <a href="https://habr.com/ru/articles/" target="_blank">
+            <button className="carLinkBtn">
+              {props.item.linktopub} &nbsp;
+              <GoArrowUpRight style={{ fontSize: "20px" }} />
+            </button>
+          </a>
+        )}
         <div className="metrics">
           <div className="metricsItem">
             <img src={eyeImg} />

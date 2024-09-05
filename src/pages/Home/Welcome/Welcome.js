@@ -14,18 +14,19 @@ const Welcome = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
-    setIsPlaying(true); 
+    console.log('play')
+    setIsPlaying(true);
     if (videoRef.current) {
-        videoRef.current.play(); // Play the video
-        setIsPlaying(true); // Update state to indicate video is playing
+        videoRef.current.play(); 
+        setIsPlaying(true); 
     }
   };
 
   const handlePause = () => {
+    console.log('stop')
     setIsPlaying(false); 
     if (videoRef.current) {
-        videoRef.current.pause(); // Pause the video
-        setIsPlaying(false);  // Update state to indicate video is paused
+        videoRef.current.pause();
     }
   };
 
@@ -38,21 +39,13 @@ const Welcome = () => {
       <div className="welcomeWrapper">
         <div className="welcomeLeft">
           <div className="welcomeImgWrap">
-            {!isPlaying ? 
-              <img 
-                src={circleImg}
-                onClick={handlePlay} 
-                className="circleImg"
-                alt="Play Button"
-              />     
-              : 
-              <img 
-                src={replayImg}
-                onClick={handlePause} 
-                className="circleImg"
-                alt="Replay Button"
-               />
-              }
+            <img 
+              src={isPlaying ? replayImg : circleImg}
+              onClick={isPlaying ? handlePause : handlePlay} 
+              className="circleImg"
+              style={{zIndex: '100'}}
+              alt="Play Button"
+            />
             {
               isPlaying ? 
                 <video ref={videoRef}  className="logoImg" autoPlay onEnded={handleVideoEnd}>

@@ -7,62 +7,12 @@ import SkillButton from "../../../components/Button/SkillButton";
 import BlackBtn from "../../../components/Button/BlackBtn";
 import PreviewImage from "./Preview/PreviewImage";
 import Rectangle from "../../../assets/Rectangle.png";
-import smallAvatar1 from "../../../assets/smallAvatar1.png";
-import smallAvatar2 from "../../../assets/smallAvatar2.png";
-import smallAvatar3 from "../../../assets/smallAvatar3.png";
-import smallAvatar4 from "../../../assets/smallAvatar4.png";
 
-import slide1 from '../../../assets/slide/slide1.png'
-import slide2 from '../../../assets/slide/slide2.png'
-import slide3 from '../../../assets/slide/slide3.png'
-import slide4 from '../../../assets/slide/slide4.png'
-import slide5 from '../../../assets/slide/slide5.png'
-import slide6 from '../../../assets/slide/slide6.png'
-import slide7 from '../../../assets/slide/slide7.png'
-import slide8 from '../../../assets/slide/slide8.png'
-import slide9 from '../../../assets/slide/slide9.png'
-import slide10 from '../../../assets/slide/slide10.png'
-import slide11 from '../../../assets/slide/slide11.png'
-import slide12 from '../../../assets/slide/slide12.png'
-import slide13 from '../../../assets/slide/slide13.png'
-import slide14 from '../../../assets/slide/slide14.png'
-import slide15 from '../../../assets/slide/slide15.png'
-import slide16 from '../../../assets/slide/slide16.png'
+
 import "./userlist.css";
+import { smallAvatar } from "../../../constant/group";
 
-const smallAvatar = [
-  {
-    url: smallAvatar1,
-    title: "Lorem",
-    images:[
-      slide1,slide2,slide3,slide4
-    ]
-  },
-  {
-    url: smallAvatar2,
-    title: "Ipsum",
-    title: "Lorem",
-   images:[
-      slide5,slide6,slide7,slide8
-    ]
-  },
-  {
-    url: smallAvatar3,
-    title: "Sit amet",
-    title: "Lorem",
-   images:[
-      slide9,slide10,slide11,slide12
-    ]
-  },
-  {
-    url: smallAvatar4,
-    title: "Consectetuer",
-    title: "Lorem",
-    images:[
-      slide13,slide14,slide15,slide16
-    ]
-  },
-];
+
 
 const skillButton = [
   "Lorem ipsum dolor sit",
@@ -74,11 +24,12 @@ const skillButton = [
 ];
 
 const UserList = () => {
-  const [open, setOpen] = useState(false);
-  const [imagesData,setImagesData] = useState([]);
-  const handleClick = (item) => {
-    setOpen(true);
-    setImagesData(item.images);
+  const[open, setOpen]=useState(false)
+  const [selected,setSelected] = useState(0);
+
+  const handleClick = (index) => {
+    setOpen(true)
+    setSelected(index)
   };
 
   return (
@@ -86,7 +37,7 @@ const UserList = () => {
       <UserListTitle />
       <Box className="customerBottom">
         <div className="userListLeftWrap">
-          <PreviewImage images={imagesData} open={open} setOpen={setOpen} />
+         { selected >=0 && <PreviewImage selected={selected} open={open} setOpen={setOpen} />}
           <div
             onClick={handleClick}
             className="customerImg"
@@ -96,7 +47,7 @@ const UserList = () => {
         <div className="userListRightWrap">
           <div className="circlePhotoContainer">
             {smallAvatar.map((item, index) => (
-              <Box key={index} onClick={() =>handleClick(item)} sx={{ marginRight: "21px" }}>
+              <Box key={index} onClick={() =>handleClick(index)} sx={{ marginRight: "21px" }}>
                 <img src={item.url} className="smallAvatar" />
                 <div className="smallAvatarText">{item.title}</div>
               </Box>
